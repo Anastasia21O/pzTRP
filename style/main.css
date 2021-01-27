@@ -1,0 +1,33 @@
+.header1{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+.start_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.end_header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.section1a{
+    display: flex;
+    padding: 43px;
+}
+.section1a_image{
+    display: flex;
+    justify-content: flex-start;
+}
+.section1a_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#section1a_text_a{
+    display: flex;
+    align-self: flex-end;
+}
