@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-left: 40px;
 }
 .end_header{
     display: flex;
@@ -16,7 +17,9 @@
 
 .section1a{
     display: flex;
-    padding: 43px;
+    flex-direction: row;
+    padding-bottom: 43px;
+    padding-top: 43px;
 }
 .section1a_image{
     display: flex;
@@ -25,9 +28,45 @@
 .section1a_text{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+.section1a1_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40px;
 }
 #section1a_text_a{
     display: flex;
     align-self: flex-end;
+}
+
+.end_{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background: black;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.vhid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 150px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 150px;
+}
+#name_vhid{
+    display: flex;
+}
+.vhid_input{
+    display: flex;
+    flex-direction: column;
 }
