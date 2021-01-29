@@ -70,3 +70,9 @@
     display: flex;
     flex-direction: column;
 }
+
+.comands{
+    height: 1000px;
+    display: flex;
+    flex-flow: column wrap;
+}
