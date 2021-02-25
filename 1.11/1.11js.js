@@ -45,3 +45,14 @@ let a = prompt("n");
 console.log(output(a));
  */
 
+/*
+//4
+function Calculate(a, b, c){
+    return (a * 1 + b * 1 + c * 1) / 3;
+}
+let a = prompt("1");
+let b = prompt("2");
+let c = prompt("3");
+console.log(Calculate(a, b, c));
+ */
+
