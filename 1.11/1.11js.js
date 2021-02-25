@@ -111,4 +111,27 @@ function Zavdanna6(){
 Zavdanna6();
  */
 
+/*
+//7
+function Zavdanna7() {
+    const a = Array.from(Array(5), () => new Array(5));
+    for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < 5; j++) {
+            a[i][j] = getRandomInt(-100, 101);
+            if (i === j) {
+                a[i][j] = (a[i][j] >= 0) ? 1 : 0;
+            }
+        }
+    }
+    let str = "";
+    for (let x = 0; x < a.length; x++) {
+        for (let j = 0; j < a[x].length; j++)
+            str += a[j][x] + " ";
+        console.log(str);
+        str = "";
+    }
+}
+Zavdanna7();
+ */
+
 
