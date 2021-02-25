@@ -82,3 +82,33 @@ console.log(isDivisible_ternarnu(n, x, y));
 console.log(isDivisible(n, x, y));
  */
 
+/*
+//6
+function getMaxOfArray(numArray) {
+    return Math.max.apply(null, numArray);
+}
+
+function getMinOfArray(numArray) {
+    return Math.min.apply(null, numArray);
+}
+
+function Zavdanna6(){
+    let N = prompt("N = ");
+    let a = new Array(N);
+    for (let b = 0; b < N; b++){
+        a[b] = getRandomInt(0, 101);
+    }
+    console.log("a: " + a);
+    console.log("Max: " + getMaxOfArray(a));
+    console.log("Min: " + getMinOfArray(a));
+    const sum = a.reduce( (accumulator, currentValue) =>
+    { 	return accumulator + currentValue});
+    console.log("Sum: " + sum);
+    console.log("Sum/N: " + sum/N);
+    const neparni = a.filter( (age) =>{    return age % 2 !== 0;} );
+    console.log("Neparni: " + neparni);
+}
+Zavdanna6();
+ */
+
+
