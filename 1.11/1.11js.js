@@ -56,3 +56,29 @@ let c = prompt("3");
 console.log(Calculate(a, b, c));
  */
 
+/*
+//5
+function isDivisible_if (n, x, y){
+    let a;
+    if(n % x === 0 && n % y === 0){
+        a = true;
+    }
+    else  a =  false;
+    return a;
+}
+
+function isDivisible_ternarnu (n, x, y){
+    return ((n % x === 0 && n % y === 0));
+}
+
+function isDivisible (n, x, y){
+    return isDivisible_ternarnu (n, x, y);
+}
+let n = prompt("n");
+let x = prompt("x");
+let y = prompt("y");
+console.log(isDivisible_if(n, x, y));
+console.log(isDivisible_ternarnu(n, x, y));
+console.log(isDivisible(n, x, y));
+ */
+
