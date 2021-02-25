@@ -203,4 +203,16 @@ let a = prompt("a");
 Zavdanna9(a);
  */
 
-
+/*
+//10
+function Zavdanna10(a){
+    let reversed = a.reverse();
+    reversed = reversed.map(number => {
+        if(Number.isInteger(number)) return number * number;
+        else return number;
+    });
+    return reversed;
+}
+let a = Zavdanna10([1, 2, "f", 4, 5, 6]);
+a.forEach(b => console.log(b));
+ */
