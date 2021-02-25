@@ -168,4 +168,39 @@ console.log("Mul: " + Mul(a, b));
 Div(a, b);
  */
 
+/*
+//9
+function Zavdanna9(a){
+    let flag = true;
+    if (a < 0){
+        console.log("Nehatuvne");
+        flag = false;
+    }
+    else console.log("Pozutuvne");
+
+    let flag2 = true;
+    if(flag){
+        for (let i = 2; i < a; i++){
+            if (a % i === 0) flag2 = false;
+        }
+    }
+    else {
+        for (let i = -2; i > a; i--){
+            if (a % i === 0) flag2 = false;
+        }
+    }
+
+    if (flag2) console.log("Proste");
+    else console.log("Ne Proste");
+
+    if(a % 2 === 0) console.log("Dilutca na 2");
+    if(a % 5 === 0) console.log("Dilutca na 5");
+    if(a % 3 === 0) console.log("Dilutca na 3");
+    if(a % 6 === 0) console.log("Dilutca na 6");
+    if(a % 9 === 0) console.log("Dilutca na 9");
+}
+let a = prompt("a");
+Zavdanna9(a);
+ */
+
 
