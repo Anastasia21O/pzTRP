@@ -13,3 +13,13 @@ let a = prompt("a");
 console.log(second(a));
  */
 
+/*
+//2
+function perimetr(side, count){
+    return side * count;
+}
+let a = prompt("side");
+let b = prompt("count");
+console.log(perimetr(a, b));
+ */
+
