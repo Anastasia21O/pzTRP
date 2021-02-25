@@ -134,4 +134,38 @@ function Zavdanna7() {
 Zavdanna7();
  */
 
+/*
+//8
+function Add(a, b){
+    return a + b;
+}
+
+function Sub(a, b){
+    return a - b;
+}
+
+function Mul(a, b){
+    return a * b;
+}
+
+function Div(a, b){
+    let z;
+    try {
+        if (a / b === Infinity){
+            throw new Error("");
+        }
+        else console.log("Div: " + a / b);
+
+    } catch (error) {
+        console.log(error.name + ": Нуль!" + error.message);
+    }
+}
+let a = prompt("a") * 1;
+let b = prompt("b") * 1;
+console.log("Add: " + Add(a, b));
+console.log("Sub: " + Sub(a, b));
+console.log("Mul: " + Mul(a, b));
+Div(a, b);
+ */
+
 
