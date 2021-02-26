@@ -33,3 +33,46 @@ let en = new Language("en", ["Monday", "Tuesday", "Wednesday", "Thursday", "Frid
 if (a === ua.name) alert(ua.getDay(b));
 else alert(en.getDay(b));
  */
+
+/*
+//2
+function Constr(length, width) {
+    this.length = length;
+    this.width = width;
+    this.ABC = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
+    this.number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    this.getPiche = function () {
+        let str = "";
+        for (let a = 0; a < length + 1; a++){
+            str += this.number[a] + " ";
+            for (let b = 0; b < width; b++){
+                if ((a + b) % 2 === 0) str += "# ";
+                else str += "@ ";
+            }
+            if (a === length){
+                str = "  ";
+                for (let a = 0; a < width; a++){
+                    str += this.ABC[a] + " ";
+                }
+            }
+            console.log(str);
+            str = "";
+        }
+    };
+}
+
+let length = 0;
+let width = 0;
+let flag = true;
+
+do {
+    length = prompt("length:") * 1;
+    width = prompt("width:") * 1;
+    if (length < 10 && length > 0 && width < 10 && width > 0) flag = false;
+}while (flag)
+
+let variant = new Constr(length, width);
+variant.getPiche();
+ */
+
