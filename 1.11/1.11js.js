@@ -102,10 +102,14 @@ function Zavdanna6(){
     console.log("Max: " + getMaxOfArray(a));
     console.log("Min: " + getMinOfArray(a));
     const sum = a.reduce( (accumulator, currentValue) =>
-    { 	return accumulator + currentValue});
+    {
+        return (accumulator + currentValue);
+    });
     console.log("Sum: " + sum);
     console.log("Sum/N: " + sum/N);
-    const neparni = a.filter( (age) =>{    return age % 2 !== 0;} );
+    const neparni = a.filter( (age) =>{
+        return age % 2 !== 0;
+    } );
     console.log("Neparni: " + neparni);
 }
 Zavdanna6();
