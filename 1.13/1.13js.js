@@ -177,3 +177,36 @@ d[100] = 1;
 console.log(count(d));
  */
 
+/*
+//8
+class Task{
+    constructor(n, d, day_s, day_f) {
+        this.name = n;
+        this.description = d;
+        this.day_start = day_s;
+        this.day_finish = day_f;
+        this.subtask = [];
+    }
+}
+
+class Own_task extends Task{
+    constructor(n, d, day_s, day_f, i, fl) {
+        super(n, d, day_s, day_f);
+        this.interest = i;
+        this.flag = fl;
+    }
+
+    toStrin(){
+        console.log("Ваша задача: " + this.name);
+        console.log("Опис задачі: " + this.description);
+        console.log("Початок: " + this.day_start);
+        console.log("Кінець: " + this.day_finish);
+        console.log("Відсоток виконання: " + this.interest + "%");
+        this.flag? console.log("Завдання в процесі.") : console.log("Завдання завершене");
+    }
+}
+
+let a = new Own_task("Випускний", "Святкування випуску", "26.06.2021", "27.06.2021", 87, true);
+a.toStrin();
+ */
+
