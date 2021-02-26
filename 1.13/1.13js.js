@@ -76,3 +76,37 @@ let variant = new Constr(length, width);
 variant.getPiche();
  */
 
+/*
+//3
+class Random{
+    static nextDouble(low, high){
+        return Math.random() * (high - low) + low;
+    }
+
+    static nextInt(low, high){
+        low = Math.ceil(low);
+        high = Math.floor(high);
+        return Math.floor(Math.random() * (high - low)) + low;
+    }
+
+    static nextElement(array){
+        let a = Random.nextInt(0, array.length);
+        return array[a];
+    }
+}
+
+let low = prompt("low:") * 1;
+let high = prompt("high:") * 1;
+let array_length = prompt("array.length") * 1;
+let mass = new Array(array_length);
+
+for (let a = 0; a < mass.length; a++){
+    mass[a] = Random.nextInt(low, high);
+}
+
+console.log("mass: " + mass);
+console.log("nextDouble: " + Random.nextDouble(low, high));
+console.log("nextInt: " + Random.nextInt(low, high));
+console.log("nextElement: " + Random.nextElement(mass));
+ */
+
