@@ -143,3 +143,20 @@ console.log(generator());
 console.log(generator2());
  */
 
+/*
+//6
+function pluck(mass, element){
+    let arr = [];
+    for (let a = 0; a < mass.length; a++){
+        arr[a] = mass[a].name;
+    }
+    return arr;
+}
+
+let characters = [
+    {name: "barney", age: 36},
+    {name: "fred", age: 40}
+];
+console.log (pluck(characters, name)); //['barney', 'fred'];
+ */
+
