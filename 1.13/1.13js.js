@@ -210,3 +210,28 @@ let a = new Own_task("Випускний", "Святкування випуск�
 a.toStrin();
  */
 
+/*
+//9
+class Worker{
+    constructor(n, s, r, d) {
+        this.name = n;
+        this.surname = s;
+        this.rate = r;
+        this.days = d;
+    }
+
+    getSalary(){
+        return this.rate * this.days;
+    }
+
+    toStrin(){
+        console.log("Ім'я: " + this.name);
+        console.log("Прізвище: " + this.surname);
+        console.log("Зарплата: " + this.getSalary());
+    }
+}
+
+let a = new Worker("Петя", "Петляк", 12, 4);
+a.toStrin();
+ */
+
