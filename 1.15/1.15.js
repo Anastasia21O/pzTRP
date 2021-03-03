@@ -111,3 +111,31 @@ function Fife(a){
 console.log(Fife("test@test.test"));
  */
 
+/*
+//6
+function Six(a){
+    let b = a.match(/\b\w+\b/g);
+    b = b.sort();
+    console.log(b);
+    let count = 1;
+    let flag = true;
+    for (let i = 0; i < b.length; i++){
+        flag = true;
+        for (let j = i + 1; j < b.length; j++){
+            if(b[i] === b[j]){
+                count++;
+            }
+            else {
+                if(flag) {
+                    console.log("Слово: " + b[i] + " зустрічається " + count + " разів/раза")
+                    i = j - 1;
+                    count = 1;
+                    flag = false;
+                }
+            }
+        }
+    }
+}
+Six("1, 2, 'one', 'two', 'three', 2, 4, 5, 4, 7, 8, 7, 3, 6");
+ */
+
