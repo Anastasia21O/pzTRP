@@ -178,3 +178,75 @@ function Seven(a){
 Seven(b);
  */
 
+/*
+//8
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min; //Максимум не включается, минимум включается
+}
+
+function Months() {
+    this.ua = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
+    this.en = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+    this.getMonth = function (arg) {
+        let count = -1;
+        for (let i = 0; i < this.en.length; i++){
+            if(arg === this.en[i]) count = i;
+        }
+        return this.ua[count];
+    };
+}
+
+function Seven(count, b){
+    let a = new Date();
+    let c = a.toString().split(" ");
+    let mon = new Months();
+    let rez = c[2] + "." + mon.getMonth(c[1]) + "." + c[3] + " " + c[4] + " Спроба " + count + ": число " + b + " не вірно!";
+    console.log(rez);
+}
+
+let flag = false;
+let a = 0;
+let b = 0;
+let count = 0;
+do{
+    count = 0;
+    alert("Гра: Вгадай число");
+    flag = false;
+    a = getRandomInt(0, 101);
+    alert("Ми загадали число тепер твоя черга вгадувати!");
+    let flag1 = true;
+    do{
+        count++;
+        alert(a);
+        b = prompt("Твоє число:") * 1;
+        if (b === a){
+            alert("Ти вгадав!!!!!)))))\nЗа " + count + " спроб ти вгадали число " + a);
+            flag1 = false;
+        }
+        else if(Math.abs(a - b) < 5){
+            alert("Дуже тепло!");
+            Seven(count, b);
+        }
+        else if(Math.abs(a - b) < 10){
+            alert("Тепло!");
+            Seven(count, b);
+        }
+        else if(Math.abs(a - b) < 25){
+            alert("Холодненько)");
+            Seven(count, b);
+        }
+        else {
+            alert("Дуже холодно)");
+            Seven(count, b);
+        }
+
+    }while (flag1)
+
+    let rez = confirm("Хочеш спробувати ще?");
+    if(rez) flag = true;
+}while (flag)
+ */
+
