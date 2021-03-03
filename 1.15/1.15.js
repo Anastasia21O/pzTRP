@@ -103,3 +103,11 @@ function Four(a){
 Four("Деякий текст");
  */
 
+/*
+//5
+function Fife(a){
+    return /^\w+@\w+\.\w+$/.test(a);
+}
+console.log(Fife("test@test.test"));
+ */
+
