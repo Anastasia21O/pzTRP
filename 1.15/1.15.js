@@ -37,3 +37,13 @@ function One(a){
 let b = One(prompt("a"));
 b.look();
  */
+
+/*
+//2
+function Two(a){
+    return a.substr(a.search(/\w*$/i));
+}
+let a = prompt();
+console.log(Two(a));
+ */
+
