@@ -66,3 +66,40 @@ function Tree(b){
 console.log(Tree(a));
  */
 
+/*
+//4
+let b = {
+    text: "asdf",
+    neg: 0,
+    pos: 0,
+    look: function (){
+        console.log("Текст: " + this.text);
+        console.log("Приголосні: " + this.neg);
+        console.log("Голосні: " + this.pos);
+    }
+}
+function Four(a){
+    this.text = a;
+    this.negative = ["б", "в", "г", "ґ", "д", "ж", "з", "й", "к", "л", "м", "н", "п", "р", "с", "т", "ф", "х", "ц", "ч", "ш", "щ", "ь"];
+    this.positive = ["а", "е", "є", "и", "і", "ї", "о", "у", "ю", "я"];
+
+    this.getpositive_negative = function (){
+        b.text = this.text;
+        this.text = a.toLowerCase();
+        let fin = this.text.split(" ");
+        fin.forEach((one) => {
+            for (let i = 0; i < this.negative.length; i++){
+                if(one[0] === this.negative[i]) b.neg++;
+            }
+            for (let i = 0; i < this.positive.length; i++){
+                if(one[0] === this.positive[i]) b.pos++;
+            }
+        })
+        console.log(b.look());
+    }
+    return this.getpositive_negative();
+}
+
+Four("Деякий текст");
+ */
+
