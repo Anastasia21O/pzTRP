@@ -56,7 +56,7 @@ console.log();
 
 c = "";
 let b = 1;
-for (let i = 0; i < a; i++){
+for (let i = 0; i < a - 1; i++){
     for (let j = 0; j <= ((a / 2) - i + 1); j++) {
         c += " ";
     }
@@ -72,30 +72,41 @@ for (let i = 0; i < a; i++){
 console.log()
 b = 1;
 
-for (i = 0; i < a; i++){
-    if (i < a / 2) {
-        for (let j = 0; j <= ((a / 2) - i + 1); j++) {
-            c += " ";
-        }
-        for (let j = 0; j < b; j++) {
-            c += "*";
-        }
-        b += 2;
-        if(i === parseInt(a / 2)) b -= 2;
-
+const heig = a;
+const widt = heig * 2 - 1;
+let count = Math.round(heig - 1);
+for (let i = heig; i > 0; i--) {
+    let res = '';
+    for (let j = count+1; j >= 1; j--) {
+        res += ' ';
     }
-    else {
-        b -= 2;
-        for (let j = 0; j <= ((a / 2) + (i - 3)); j++) {
-            c += " ";
-        }
-        for (let j = 0; j < b; j++) {
-            c += "*";
-        }
+    for (let y = widt - count * 2; y > 0; y--) {
+        res += '*';
     }
-    console.log(c);
-    c = "";
-}*/
+    for (let j = count+1; j >= 1; j--) {
+        res += ' ';
+    }
+    res += '\n';
+    console.log(res);
+    count--;
+}
+count++;
+for (let i = heig; i >= 0 ; i--) {
+    let res = '';
+    for (let j = 0; j <= count; j++) {
+        res += ' ';
+    }
+    for (let y = 0; y <  widt - count * 2; y++) {
+        res += '*';
+    }
+    for (let j = 0; j <= count; j++) {
+        res += ' ';
+    }
+    res += '\n';
+    console.log(res);
+    count++;
+}
+ */
 /*
 //5
 let numb = 10000;
