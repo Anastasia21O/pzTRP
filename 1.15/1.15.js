@@ -139,3 +139,42 @@ function Six(a){
 Six("1, 2, 'one', 'two', 'three', 2, 4, 5, 4, 7, 8, 7, 3, 6");
  */
 
+/*
+//7
+let b = new Date();
+function Week() {
+    this.ua = ["понеділок", "вівторок", "середа", "четверг", "п'ятниця", "субота", "неділя"];
+    this.en = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+    this.getDay = function (arg) {
+        let count = -1;
+        for (let i = 0; i < this.en.length; i++){
+            if(arg === this.en[i]) count = i;
+        }
+        return this.ua[count];
+    };
+}
+
+function Months() {
+    this.ua = ["січеня", "лютого", "березеня", "квітеня", "травеня", "червеня", "липеня", "серпеня", "вересеня", "жовтеня", "листопада", "груденя"];
+    this.en = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+    this.getMonth = function (arg) {
+        let count = -1;
+        for (let i = 0; i < this.en.length; i++){
+            if(arg === this.en[i]) count = i;
+        }
+        return this.ua[count];
+    };
+}
+
+function Seven(a){
+    let c = a.toString().split(" ");
+    let lan = new Week();
+    let mon = new Months();
+    let rez = c[4] + ", " + lan.getDay(c[0]) + " " + c[2] + " " + mon.getMonth(c[1]) + " " + c[3] + " року";
+    console.log(rez);
+}
+Seven(b);
+ */
+
