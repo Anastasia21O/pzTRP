@@ -47,3 +47,22 @@ let a = prompt();
 console.log(Two(a));
  */
 
+/*
+//3
+let a = [1, 2, 'one', 'two', 'three', 2, 4, 5, 4, 7, 8, 7, 3, 6];
+function Tree(b){
+    b = b.sort();
+    let c = [];
+    for (let i = 0; i < b.length; i++){
+        if (i === b.length - 1 && b[b.length - 1] !== b[b.length - 2]){
+            c[c.length] = b[i];
+        }
+        else if(b[i] !== b[i + 1]){
+            c[c.length] = b[i];
+        }
+    }
+    return c.forEach((j) => console.log(j));
+}
+console.log(Tree(a));
+ */
+
